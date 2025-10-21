@@ -31,7 +31,7 @@ const testimonials = [
   {
     name: "John Michaels",
     role: "Student Athlete",
-    image: client1,
+    image: client4,
     quote:
       "Since I started taking VitaBoost, my performance and focus have gone through the roof. Totally recommend it!",
   },
@@ -81,16 +81,17 @@ const Testimonials = () => {
         {/* Testimonials Carousel */}
         <div className="relative flex justify-center items-center">
           {/* Previous button */}
-          <button
+          {/* <button
             onClick={prev}
             className="absolute left-0 md:-left-10 bg-white/60 
             backdrop-blur-md p-3 rounded-full shadow hover:bg-[#FF7A00]/20 transition"
           >
             ‹
-          </button>
+          </button> */}
 
           {/* Testimonial cards */}
-          <div className="relative w-full max-w-3xl h-[360px] flex justify-center items-center">
+          <div className="relative w-full max-w-3xl h-[360px]
+           flex justify-center items-center">
             <AnimatePresence mode="popLayout">
               {testimonials.map(
                 (t, index) =>
@@ -111,13 +112,13 @@ const Testimonials = () => {
                         {t.quote}
                       </p>
 
-                      <div className="flex justify-center gap-1 text-[#FF7A00] mb-3">
+                      <div className="flex justify-center gap-1 text-[#FF7A00]">
                         {[...Array(5)].map((_, i) => (
                           <FaStar key={i} />
                         ))}
                       </div>
 
-                      <div className="flex flex-col items-center">
+                      <div className="flex flex-col items-center py-4">
                         <img
                           src={t.image}
                           alt={t.name}
@@ -135,13 +136,13 @@ const Testimonials = () => {
           </div>
 
           {/* Next button */}
-          <button
+          {/* <button
             onClick={next}
-            className="absolute right-0 md:-right-10 bg-white/60 
+            className="absolute right-0 md:-right-10 bg-#FF7A00 
             backdrop-blur-md p-3 rounded-full shadow hover:bg-[#FF7A00]/20 transition"
           >
             ›
-          </button>
+          </button> */}
         </div>
 
         {/* Dots indicator */}
