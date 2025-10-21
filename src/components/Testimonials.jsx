@@ -1,33 +1,37 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaStar, FaQuoteLeft } from "react-icons/fa";
+import client1 from "../assets/images/client1.png"
+import client2 from "../assets/images/client2.jpg";
+import client3 from "../assets/images/client3.jpg";
+import client4 from "../assets/images/client1.png";
 
 const testimonials = [
   {
     name: "Amara Johnson",
     role: "Fitness Coach",
-    image: "/src/assets/images/client1.png",
+    image: client1,
     quote:
       "VitaBoost has completely transformed my energy levels. I feel refreshed every morning and more focused throughout my sessions!",
   },
   {
     name: "David Cole",
     role: "Entrepreneur",
-    image: "/src/assets/images/client2.jpg",
+    image: client2,
     quote:
       "As someone always on the go, VitaBoost keeps me energized all day. No crashes, just clean vitality!",
   },
   {
     name: "Sophia Wright",
     role: "Nutrition Expert",
-    image: "/src/assets/images/client3.jpg",
+    image: client3,
     quote:
       "I’ve recommended VitaBoost to my clients for its pure, natural ingredients. It’s one of the best blends I’ve seen.",
   },
   {
     name: "John Michaels",
     role: "Student Athlete",
-    image: "/src/assets/images/client2.jpg",
+    image: client1,
     quote:
       "Since I started taking VitaBoost, my performance and focus have gone through the roof. Totally recommend it!",
   },
