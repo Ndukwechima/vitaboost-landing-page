@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import AboutImg from "../assets/images/hero1.png"
 
 const About = () => {
   return (
@@ -25,7 +26,7 @@ const About = () => {
           className="relative"
         >
           <img
-            src="/src/assets/images/hero1.png"
+            src={AboutImg}
             alt="About VitaBoost"
             className="rounded-3xl shadow-2xl object-cover w-full h-[420px]"
           />

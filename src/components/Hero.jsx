@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import HeroImg from "../assets/images/hero1.png"
 
 const Hero = () => {
   const whatsappLink =
@@ -10,7 +11,7 @@ const Hero = () => {
       id="home"
       className="relative bg-cover bg-center bg-no-repeat h-[90vh] flex items-center justify-center text-center"
       style={{
-        backgroundImage: "url('/src/assets/images/hero1.png')", // <-- Replace with your image path
+        backgroundImage: `url(${HeroImg})`, // ✅ use the imported variable
       }}
     >
       {/* Overlay */}

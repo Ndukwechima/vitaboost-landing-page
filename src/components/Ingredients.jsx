@@ -1,38 +1,45 @@
 import React from "react";
 import { motion } from "framer-motion";
+import img1 from "../assets/images/hero1.png"
+import img2 from "../assets/images/hero1.png";
+import img3 from "../assets/images/hero1.png";
+import img4 from "../assets/images/hero1.png";
+import img5 from "../assets/images/hero1.png";
+import img6 from "../assets/images/hero1.png";
+
 
 const ingredients = [
   {
-    img: "/src/assets/images/hero1.png",
+    img: img1,
     name: "Korean Ginseng",
     description:
       "Improves stamina and reduces fatigue by enhancing oxygen uptake.",
   },
   {
-    img: "/src/assets/images/hero1.png",
+    img: img2,
     name: "Turmeric Extract",
     description:
       "Supports anti-inflammatory and antioxidant activity naturally.",
   },
   {
-    img: "/src/assets/images/hero1.png",
+    img: img3,
     name: "Vitamin C",
     description:
       "Boosts immune defense and collagen production for healthy skin.",
   },
   {
-    img: "/src/assets/images/hero1.png",
+    img: img4,
     name: "Ashwagandha",
     description: "Reduces stress and promotes mental clarity and focus.",
   },
   {
-    img: "/src/assets/images/hero1.png",
+    img: img5,
     name: "Spirulina",
     description:
       "A nutrient-dense superfood rich in protein, iron, and antioxidants.",
   },
   {
-    img: "/src/assets/images/hero1.png",
+    img: img6,
     name: "Zinc",
     description: "Essential for immune strength and muscle recovery.",
   },
@@ -109,7 +116,7 @@ const Ingredients = () => {
             className="relative"
           >
             <img
-              src="/src/assets/images/hero1.png"
+              src={img2}
               alt="VitaBoost Bottle"
               className="w-64 md:w-80 drop-shadow-2xl"
             />
